@@ -8,14 +8,16 @@ export function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
-  const p = projects.find((x) => x.slug === params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const p = projects.find((x) => x.slug === slug);
   if (!p) return {};
   return { title: `${p.name} · Miłosz Wiater`, description: p.summary };
 }
 
-export default function ProjectPage({ params }: { params: { slug: string } }) {
-  const p = projects.find((x) => x.slug === params.slug);
+export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const p = projects.find((x) => x.slug === slug);
   if (!p) notFound();
 
   return (
