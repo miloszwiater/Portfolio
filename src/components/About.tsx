@@ -23,18 +23,18 @@ const skills = [
 
 export default function About() {
   return (
-    <section id="about" className="relative mx-auto max-w-6xl px-6 py-32">
+    <section id="about" className="relative mx-auto max-w-6xl px-5 sm:px-6 py-20 sm:py-32">
       {/* heading */}
-      <div className="grid md:grid-cols-[1fr_2fr] gap-10 mb-20">
+      <div className="grid md:grid-cols-[1fr_2fr] gap-8 md:gap-10 mb-14 sm:mb-20">
         <div>
           <p className="font-mono text-sm text-accent mb-3">// 01 — about</p>
-          <h2 className="text-4xl md:text-6xl font-bold tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight">
             Pełen <span className="gradient-text">stack</span>.
             <br />
             Realne wdrożenia.
           </h2>
         </div>
-        <div className="text-slate-400 text-base md:text-lg leading-relaxed space-y-4 pt-2">
+        <div className="text-slate-400 text-sm sm:text-base md:text-lg leading-relaxed space-y-4 pt-2">
           <p>
             Komfortowo poruszam się w pełnym cyklu wytwarzania oprogramowania: od projektowania bazy danych i API,
             przez UI, po konteneryzację, CI/CD i wdrożenie produkcyjne. Lubię łączyć światy — front i back, web i
@@ -48,7 +48,7 @@ export default function About() {
       </div>
 
       {/* stats */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-20">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-14 sm:mb-20">
         {stats.map((s, i) => (
           <motion.div
             key={s.label}

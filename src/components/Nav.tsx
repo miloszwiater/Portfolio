@@ -52,6 +52,7 @@ export default function Nav() {
             ))}
             <a
               href="/MiloszWiater_CV_2026.pdf"
+              download
               className="ml-2 rounded-md bg-accent px-4 py-1.5 text-sm font-semibold text-bg hover:bg-white transition"
             >
               CV
@@ -81,6 +82,7 @@ export default function Nav() {
             ))}
             <a
               href="/MiloszWiater_CV_2026.pdf"
+              download
               className="mt-2 rounded-md bg-accent px-4 py-2 text-sm font-semibold text-bg text-center"
             >
               Pobierz CV

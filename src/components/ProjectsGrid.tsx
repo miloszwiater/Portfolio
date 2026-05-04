@@ -19,13 +19,13 @@ const accentColors = [
 
 export default function ProjectsGrid() {
   return (
-    <section id="projects" className="relative mx-auto max-w-6xl px-6 py-32">
-      <div className="mb-16">
+    <section id="projects" className="relative mx-auto max-w-6xl px-5 sm:px-6 py-20 sm:py-32">
+      <div className="mb-12 sm:mb-16">
         <p className="font-mono text-sm text-accent mb-3">// 02 — projekty</p>
-        <h2 className="text-4xl md:text-6xl font-bold tracking-tight">
+        <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight">
           9 projektów. <span className="gradient-text">3 ekosystemy.</span>
         </h2>
-        <p className="mt-4 text-slate-400 max-w-2xl text-base md:text-lg">
+        <p className="mt-4 text-slate-400 max-w-2xl text-sm sm:text-base md:text-lg">
           Wszystkie projekty zrealizowane komercyjnie — od architektury i bazy
           danych po deploy produkcyjny. Klikaj kafelki, żeby zobaczyć szczegóły.
         </p>

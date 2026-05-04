@@ -21,13 +21,13 @@ const checks = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="relative mx-auto max-w-6xl px-6 py-32">
+    <section id="contact" className="relative mx-auto max-w-6xl px-5 sm:px-6 py-20 sm:py-32">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="relative overflow-hidden rounded-3xl glass-strong p-10 md:p-16"
+        className="relative overflow-hidden rounded-3xl glass-strong p-6 sm:p-10 md:p-16"
       >
         <div className="absolute -top-32 -left-32 h-80 w-80 rounded-full bg-accent/30 blur-3xl orb pointer-events-none" />
         <div
@@ -41,10 +41,10 @@ export default function Contact() {
             Open to work · dostępny od zaraz
           </div>
           <p className="font-mono text-sm text-accent mb-3">// 04 — kontakt</p>
-          <h2 className="text-4xl md:text-7xl font-bold tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-7xl font-bold tracking-tight">
             Skontaktuj <span className="gradient-text">się ze mną</span>.
           </h2>
-          <p className="mt-6 text-slate-300 max-w-2xl text-base md:text-lg">
+          <p className="mt-6 text-slate-300 max-w-2xl text-sm sm:text-base md:text-lg">
             Jestem otwarty na każdą formę współpracy — umowę o pracę, B2B lub zlecenie.
             Pracuję zdalnie, hybrydowo oraz stacjonarnie w Rzeszowie. Najszybciej odpowiem na maila lub telefon.
           </p>
@@ -83,18 +83,18 @@ export default function Contact() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <a
               href="mailto:milosz.wiater@op.pl"
-              className="group glass glow-hover flex items-center justify-between gap-4 rounded-2xl p-5"
+              className="group glass glow-hover flex items-center justify-between gap-3 sm:gap-4 rounded-2xl p-4 sm:p-5"
             >
-              <div className="flex items-center gap-4">
-                <div className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-accent/20 to-accent2/20 border border-accent/20">
+              <div className="flex items-center gap-3 sm:gap-4 min-w-0">
+                <div className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-accent/20 to-accent2/20 border border-accent/20">
                   <Mail className="h-5 w-5 text-accent" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <div className="text-xs text-slate-500">email</div>
-                  <div className="text-slate-100 font-medium">milosz.wiater@op.pl</div>
+                  <div className="text-slate-100 font-medium text-sm sm:text-base truncate">milosz.wiater@op.pl</div>
                 </div>
               </div>
-              <ArrowUpRight className="h-5 w-5 text-slate-500 group-hover:text-accent group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition" />
+              <ArrowUpRight className="h-5 w-5 shrink-0 text-slate-500 group-hover:text-accent group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition" />
             </a>
 
             <a
@@ -133,6 +133,7 @@ export default function Contact() {
 
             <a
               href="/MiloszWiater_CV_2026.pdf"
+              download
               className="group glass glow-hover flex items-center justify-between gap-4 rounded-2xl p-5"
             >
               <div className="flex items-center gap-4">
