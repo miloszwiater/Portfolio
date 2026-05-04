@@ -132,7 +132,7 @@ export default function Contact() {
             </a>
 
             <a
-              href="/MiloszWiater_CV_2026.pdf"
+              href="/MiloszWiater_CV.pdf"
               download
               className="group glass glow-hover flex items-center justify-between gap-4 rounded-2xl p-5"
             >

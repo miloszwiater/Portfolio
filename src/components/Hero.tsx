@@ -108,7 +108,7 @@ export default function Hero() {
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </a>
           <a
-            href="/MiloszWiater_CV_2026.pdf"
+            href="/MiloszWiater_CV.pdf"
             download
             className="group inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-5 sm:px-7 py-3 sm:py-3.5 text-sm font-medium text-slate-100 hover:bg-white/10 hover:border-white/25 transition-all"
           >

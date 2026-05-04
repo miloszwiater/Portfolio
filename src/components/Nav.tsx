@@ -51,7 +51,7 @@ export default function Nav() {
               </a>
             ))}
             <a
-              href="/MiloszWiater_CV_2026.pdf"
+              href="/MiloszWiater_CV.pdf"
               download
               className="ml-2 rounded-md bg-accent px-4 py-1.5 text-sm font-semibold text-bg hover:bg-white transition"
             >
@@ -81,7 +81,7 @@ export default function Nav() {
               </a>
             ))}
             <a
-              href="/MiloszWiater_CV_2026.pdf"
+              href="/MiloszWiater_CV.pdf"
               download
               className="mt-2 rounded-md bg-accent px-4 py-2 text-sm font-semibold text-bg text-center"
             >
